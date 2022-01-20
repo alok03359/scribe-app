@@ -1,0 +1,25 @@
+<div class="row mt-5">
+    <div class="col">
+
+        <div class="form-group">
+            <label>Create New Post</label>
+            <input type="text" class="form-control"
+            id="title" placeholder="Post Title" name="title"
+            [(ngModel)]="title" >
+        </div>
+        <div class="form-group">
+            <label>Post Content</label>
+           <ngx-editor [(ngModel)]="content"  ></ngx-editor>
+             
+        </div>
+
+        <div class="form-group float-right">
+            <button class="btn btn-primary round" (click)="createPost()">
+                Upload
+            </button>
+        </div>
+
+        
+    
+    </div>
+</div>
